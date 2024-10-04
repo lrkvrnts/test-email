@@ -1,0 +1,28 @@
+{
+  "name": "test-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mjml src/email.mjml -o dist/email.html",
+    "watch": "mjml src/email.mjml -w -o dist/email.html",
+    "validate": "amphtml-validator dist/email.html",
+    "serve": "http-server dist -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "amphtml-validator": "^1.0.38",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-mjml": "^4.0.2",
+    "http-server": "^14.1.1",
+    "mjml": "^4.15.3"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.4"
+  }
+}
